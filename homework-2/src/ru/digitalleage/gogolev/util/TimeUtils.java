@@ -10,4 +10,5 @@ public class TimeUtils {
         var formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
         return LocalDate.parse(inputString, formatter);
     }
+
 }
