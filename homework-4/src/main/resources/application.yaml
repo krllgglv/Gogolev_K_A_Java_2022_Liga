@@ -1,0 +1,15 @@
+
+
+files:
+  helpFile: src\main\resources\files\help.txt
+  init:
+    users: src\main\resources\files\users_init.csv
+    tasks: src\main\resources\files\tasks_init.csv
+  save:
+    users: src\main\resources\files\users_save.csv
+    tasks: src\main\resources\files\tasks_save.csv
+check:
+  pattern:
+    addParams: t|d|u|da
+    alterParams: i|t|d|u|s|da
+
