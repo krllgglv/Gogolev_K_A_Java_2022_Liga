@@ -9,10 +9,9 @@ public abstract class AbstractParametrizedEntityCommand<R> extends AbstractEntit
 
     protected Map<String, String> parameters;
 
-    protected AbstractParametrizedEntityCommand( UsersService usersService, TasksService tasksService, String input) {
+    protected AbstractParametrizedEntityCommand( UsersService usersService, TasksService tasksService, Map<String, String> params) {
         super(usersService, tasksService);
-        this.parameters = validateAndGetParameters(input);
+        this.parameters = params;
     }
 
-     protected abstract Map<String, String> validateAndGetParameters(String input);
 }

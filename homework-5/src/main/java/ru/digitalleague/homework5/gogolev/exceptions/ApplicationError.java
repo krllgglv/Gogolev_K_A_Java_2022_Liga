@@ -1,8 +1,5 @@
 package ru.digitalleague.homework5.gogolev.exceptions;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-
 import java.time.LocalDateTime;
 
 public class ApplicationError {

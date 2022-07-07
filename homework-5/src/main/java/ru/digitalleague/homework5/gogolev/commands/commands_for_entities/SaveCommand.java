@@ -4,8 +4,8 @@ import ru.digitalleague.homework5.gogolev.commands.AbstractEntityCommand;
 import ru.digitalleague.homework5.gogolev.services.TasksService;
 import ru.digitalleague.homework5.gogolev.services.UsersService;
 
-public class SaveStateCommand extends AbstractEntityCommand<Void> {
-    public SaveStateCommand(UsersService usersService, TasksService tasksService) {
+public class SaveCommand extends AbstractEntityCommand<Void> {
+    public SaveCommand(UsersService usersService, TasksService tasksService) {
         super(usersService, tasksService);
     }
 

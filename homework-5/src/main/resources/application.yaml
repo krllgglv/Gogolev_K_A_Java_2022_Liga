@@ -1,10 +1,10 @@
-
-
 files:
   init:
     users: src\main\resources\files\users_init.csv
     tasks: src\main\resources\files\tasks_init.csv
   save:
     tasks: src\main\resources\files\tasks_save.csv
-
-
+check:
+  pattern:
+    addParams: t|d|u|da
+    alterParams: i|t|d|u|s|da
