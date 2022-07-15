@@ -1,0 +1,18 @@
+DROP TABLE IF EXISTS users CASCADE ;
+DROP TABLE IF EXISTS tasks;
+
+CREATE TABLE users(
+    id BIGSERIAL PRIMARY KEY,
+    name VARCHAR(64) NOT NULL
+);
+
+CREATE TABLE tasks(
+    id BIGSERIAL PRIMARY KEY,
+    title VARCHAR(256) NOT NULL,
+    description VARCHAR(512) NOT NULL,
+    status VARCHAR(1),
+    date_to DATE,
+    user_id BIGINT REFERENCES users (id) ON DELETE CASCADE NOT NULL
+);
+
+

@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: postgres
+    url: jdbc:postgresql://localhost:5432/homework
+  sql:
+    init:
+      mode: always
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+files:
+  save:
+    tasks: src\main\resources\files\tasks_save.csv
+    users: src\main\resources\files\users_save.csv
+check:
+  pattern:
+    addParams: t|d|u|da
+    alterParams: i|t|d|u|s|da
